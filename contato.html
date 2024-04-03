@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticoliro</title>
-</head>
-<body>
-    <h1>Contato</h1>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="contato">
+      <h1>Contato</h1>
+    </div>
 
-    <form>
+    <div class="formulario">
+      <form>
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome">
-        <br>
+        <input type="text" name="nome" id="nome" />
+        <br />
         <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" />
+        <br />
         <br>
-
+        <br>
         O quanto você gostou do site?
-        <br>
+        <br />
         Pouco satisfeito
-        <input type="range" name="satisfacao" min="0" max="10">
+        <input type="range" name="satisfacao" min="0" max="10" />
         Muito satisfeito
-        <br>
+        <br />
         <button>Enviar</button>
-    </form>
-</body>
+      </form>
+    </div>
+  </body>
 </html>
