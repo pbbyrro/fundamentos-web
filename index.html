@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticoliro</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100&display=swap"
       rel="stylesheet"
     />
+    <script type="text/javascript" src="./assets/javascript/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -40,7 +41,7 @@
               </p>
             </div>
           </div>
-            <img src="assets/img/ticoliro1.jpg" alt="Ticoliro" />
+          <img src="assets/img/ticoliro1.jpg" alt="Ticoliro" />
         </div>
       </div>
 
@@ -56,23 +57,25 @@
             </ul>
           </div>
 
-
-        <div class="container">
-          <div class="local">
-            <h2>Onde o Tico nasceu?</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235237.0082783885!2d-47.23270933792692!3d-22.892032929968817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c61de74b6325%3A0x17e53a6a2178c22a!2sCampinas%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1712018414753!5m2!1sen!2sbr"
-              width="400"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div class="container">
+            <div class="local">
+              <h2>Onde o Tico nasceu?</h2>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235237.0082783885!2d-47.23270933792692!3d-22.892032929968817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8c61de74b6325%3A0x17e53a6a2178c22a!2sCampinas%2C%20State%20of%20S%C3%A3o%20Paulo!5e0!3m2!1sen!2sbr!4v1712018414753!5m2!1sen!2sbr"
+                width="400"
+                height="250"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" 
+                id="mapa"
+                onmousemove="mapaZoom()"
+                onmouseout="mapaNormal()"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </main>
   </body>
 </html>

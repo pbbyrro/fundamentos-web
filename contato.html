@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ticoliro</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="./assets/javascript/script.js" defer></script>
   </head>
   <body>
     <div class="contato">
@@ -14,13 +19,15 @@
     <div class="formulario">
       <form>
         <label for="nome">Nome</label>
-        <input type="text" name="nome" id="nome" />
+        <input type="text" name="nome" id="nome" onkeyup="validaNome()" />
+        <div id="txtNome"></div>
         <br />
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+        <input type="email" name="email" id="email" onkeyup="validaEmail()" />
+        <div id="txtEmail"></div>
         <br />
-        <br>
-        <br>
+        <br />
+        <br />
         O quanto você gostou do site?
         <br />
         Pouco satisfeito
